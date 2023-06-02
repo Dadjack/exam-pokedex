@@ -1,4 +1,4 @@
 # exam-pokedex
 David-Nillet David
-Cda Java Angular
-Webforce3
+Cda Java 
+Webforce3 Itekway
