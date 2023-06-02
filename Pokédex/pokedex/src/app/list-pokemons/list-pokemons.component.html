@@ -1,0 +1,63 @@
+<h2>Liste des Pokémon de type foudre</h2>
+<img src="assets/images/electrique-pokemon.jpg"/>
+<button class="buttonf" (click)="showListFoudre = !showListFoudre">Afficher la liste</button>
+<div class="yellow">
+<ul class="pokemons" *ngFor="let pokemon of pokemonsFoudre">
+  <label>Nom</label>
+  <li>{{ pokemon.nom | uppercase }}</li>
+  <label>ID</label>
+  <li>{{ pokemon.id }}</li>
+  <div *ngIf="showListFoudre">
+    <label>Taille</label>
+    <li>{{ pokemon.taille }}</li>
+    <label>Evolution</label>
+    <li>{{ pokemon.evolution }}</li>
+    <label>Faiblesses</label>
+    <li>{{ pokemon.faiblesses.join(', ') }}</li>
+    <label>Attaques</label>
+    <li>{{ pokemon.attaques.join(', ') }}</li>
+  </div>
+</ul>
+</div>
+<h2>Liste des Pokémon de type feu</h2>
+<img src="assets/images/fire.png"/>
+<button class="buttonfe"  (click)="showListFeu = !showListFeu">Afficher la liste</button>
+<div class="fire">
+<ul class="pokemons" *ngFor="let pokemon of pokemonsFeu">
+  <label>Nom</label>
+  <li>{{ pokemon.nom | uppercase }}</li>
+  <label>ID</label>
+  <li>{{ pokemon.id }}</li>
+  <div *ngIf="showListFeu">
+    <label>Taille</label>
+    <li>{{ pokemon.taille }}</li>
+    <label>Evolution</label>
+    <li>{{ pokemon.evolution }}</li>
+    <label>Faiblesses</label>
+    <li>{{ pokemon.faiblesses.join(', ') }}</li>
+    <label>Attaques</label>
+    <li>{{ pokemon.attaques.join(', ') }}</li>
+  </div>
+</ul>
+</div>
+<h2>Liste des Pokémon de type herbe</h2>
+<img src="assets/images/plante.jpg"/>
+<button class="buttonp"  (click)="showListPlantes = !showListPlantes">Afficher la liste</button>
+<div class="plante">
+<ul class="pokemons" *ngFor="let pokemon of pokemonsPlantes">
+  <label>Nom</label>
+  <li>{{ pokemon.nom | uppercase }}</li>
+  <label>ID</label>
+  <li>{{ pokemon.id }}</li>
+  <div *ngIf="showListPlantes">
+    <label>Taille</label>
+    <li>{{ pokemon.taille }}</li>
+    <label>Evolution</label>
+    <li>{{ pokemon.evolution }}</li>
+    <label>Faiblesses</label>
+    <li>{{ pokemon.faiblesses.join(', ') }}</li>
+    <label>Attaques</label>
+    <li>{{ pokemon.attaques.join(', ') }}</li>
+  </div>
+</ul>
+</div>

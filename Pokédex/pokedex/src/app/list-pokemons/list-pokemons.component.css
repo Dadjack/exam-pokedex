@@ -1,0 +1,65 @@
+/* PokemonComponent CSS styles */
+button{
+  cursor: pointer;
+  width: 5em;
+  height: 4em;
+  margin: 1.5em;
+}
+
+img{
+  width: 5em;
+}
+
+.buttonf{
+  background-color: yellow;
+  color: black;
+}
+
+.buttonfe{
+  background-color: red;
+  color: white;
+}
+
+.buttonp{
+  background-color: green;
+  color: white;
+}
+
+.yellow ul li {
+  background-color: yellow;
+}
+
+.fire ul li {
+  background-color: red;
+}
+
+.plante ul li {
+  background-color: green;
+}
+.pokemons {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+  }
+
+  /* .pokemons .afficher li{
+    display: none;
+  } */
+
+  .pokemons li ,label{
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  color: black;
+  background-color: #EEE;
+  margin: 1em;
+  padding: .3em;
+  height: 1.6em;
+  border-radius: 4px;
+  }
+
+  .pokemons li:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+  }
